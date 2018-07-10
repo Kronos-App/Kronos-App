@@ -16,6 +16,36 @@ module.exports = {
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
                 use: ['babel-loader', 'ts-loader']
+            },
+            {
+              test: /\.css$/,
+              exclude: /node_modules/,
+              use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.md$/,
+                use: [
+                {
+                    loader: 'html-loader'
+                },
+                {
+                    loader: 'markdown-loader'
+                }
+                ]
+            },
+            {
+                test: /\.svg$/,
+                use: [
+                {
+                    loader: 'babel-loader'
+                },
+                {
+                    loader: 'react-svg-loader',
+                    options: {
+                    jsx: true // true outputs JSX tags
+                    }
+                }
+                ]
             }
         ]
     }, 
