@@ -1,0 +1,10 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+  "parser": "typescript-eslint-parser",
+  "jsRules": {},
+  "rules": {
+    "no-default-export": true
+  },
+  "rulesDirectory": []
+}

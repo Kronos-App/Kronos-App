@@ -1,25 +1,25 @@
-import 'babel-polyfill';
+import 'babel-polyfill'
 import 'mocha'
-import chai, { expect } from 'chai';
-import { configure, shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import React from 'react';
-import sinon from 'sinon';
-import sinonChai from 'sinon-chai';
+import chai, { expect } from 'chai'
+import { configure, shallow, mount } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
+import React from 'react'
+import sinon from 'sinon'
+import sinonChai from 'sinon-chai'
 
-require('isomorphic-fetch');
+require('isomorphic-fetch')
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
-chai.use(sinonChai);
+chai.use(sinonChai)
 
-let sandbox;
+let sandbox
 beforeEach(() => {
   sandbox = sinon.createSandbox()
-});
+})
 
 afterEach(() => {
-  sandbox.restore();
-});
+  sandbox.restore()
+})
 
-export { chai, React, expect, shallow, mount, sandbox };
+export { chai, React, expect, shallow, mount, sandbox }
