@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import HelloWorld from './components/HelloWorld'
 
 const App = () => {
+    debugger;
     return (
-    <div>
-        <p>Hello World!</p>
-    </div>)
+    <HelloWorld />
+    )
 };
 
 ReactDOM.render(<App />, document.getElementById('app'))
