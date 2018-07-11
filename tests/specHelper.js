@@ -1,5 +1,4 @@
 import 'babel-polyfill'
-import 'mocha'
 import chai, { expect } from 'chai'
 import { configure, shallow, mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
