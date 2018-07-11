@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { HelloWorld } from './components/HelloWorld'
+import { Main } from './components/Main.jsx'
 
 const App = () => {
-  return <HelloWorld />
+  return <Main />
 }
 
 ReactDOM.render(<App />, document.getElementById('app'))
